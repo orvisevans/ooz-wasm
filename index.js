@@ -8,17 +8,10 @@ var module_ = null;
 var lastDecompressionPtr_ = 0;
 
 function load() {
-  addNodeFlag();
   if (!module_) {
     module_ = oozModule();
   }
   return module_;
-}
-
-function addNodeFlag() {
-  const argv = Array.from(process.argv);
-  const flag = "--experimental-wasm-simd";
-  if (!argv.includes(flag)) process.argv.push(flag);
 }
 
 /**
