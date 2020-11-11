@@ -44,11 +44,7 @@ function decompress(data: Uint8Array, rawSize: number): Promise<Uint8Array>;
 ### Build Using Docker
 
 1. Install Docker
-2. Build the image
-   ```PowerShell
-   docker build -t ooz .
-   ```
-3. Run the build commands in the container
+2. Run the build commands in the container
    ```PowerShell
    docker run --rm -it --mount type=bind,source="${PWD}",target="/src" emscripten/emsdk bash -c "cd /src; emcmake cmake -B build; cmake --build build"
    ```
