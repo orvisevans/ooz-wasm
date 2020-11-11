@@ -15,6 +15,7 @@ target_link_options(ooz PRIVATE
   "SHELL:-s MODULARIZE=1"
   "SHELL:-s STRICT=1"
   "SHELL:-s SINGLE_FILE=1"
+  "SHELL:-s ASSERTIONS=1"
   "SHELL:-s ALLOW_MEMORY_GROWTH=1"
   "SHELL:-s EXPORTED_FUNCTIONS='[_Kraken_Decompress,_malloc,_free]'"
   "-O3"
